@@ -25,3 +25,17 @@ class Clock extends React.Componet {
   }
 }
 ```
+
+another performance imprvement can be done with _shouldComponentUpdate()_
+
+```js
+shouldComponentUpdate(nextProps,nextState){
+  if (this.props.color !== nextProps.color) {
+    return true;
+  }
+  if (this.state.count !== nextState.count) {
+    return true;
+  }
+  return false;
+}
+```

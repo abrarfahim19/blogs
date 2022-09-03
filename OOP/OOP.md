@@ -51,4 +51,6 @@ A class may have many morph. Thing of _Select_, _textBox_, _Input_ they all rend
 Concept implementation with Chess Board:
 
 - Inherit postion, color from parent class
--
+- Encapsulate the logic of piece move.
+- Abstraction when the piece needs to know the king check before moving
+- Polymorphism for the same move using different orientation
